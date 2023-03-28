@@ -11,22 +11,24 @@
 </head>
 
 <body style="background-color: rgb(201, 214, 178);">
+    <div id="alert"></div>
     <h2 class="ml-4 mb-3 mt-2 text-primary form-text">Bir Adet Form</h2>
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-8 offset-sm-2">
-                <form id="userform" action="" method="post">
+                <form id="userForm" action="" method="post">
                     <div class="mb-3 form-group">
                         <label for="username" class="form-label">Kullanıcı Adı</label>
-                        <input type="text" name="username" class="form-control" id="username">
+                        <input type="text" name="username" class="form-control" id="userName">
                     </div>
                     <div class="mb-3 form-group">
                         <label for="score" class="form-label">Puanınız</label>
                         <input type="number" name="score" class="form-control" id="score">
                     </div>
-                    <button class="btn btn-danger">Sıfırla</button>
+                    <button type="reset" class="btn btn-danger">Sıfırla</button>
                     <button class="btn btn-success" type="submit">Gönder</button>
                 </form>
+                <ul class="list-group mt-4" id="userList">            
             </div>
         </div>
     </div>
